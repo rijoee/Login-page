@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (!empty($user) && !empty($pass)) {
         if ($user === $validUsername && $pass === $validPassword) {
             $_SESSION['user'] = $user;
-            header("Location: portfolio.html");
+            header("Location: index.html");
             exit;
         } else {
             $error = "Invalid username or password.";
