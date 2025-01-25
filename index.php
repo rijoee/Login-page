@@ -1,12 +1,10 @@
 <?php
 session_start();
 
-// Handle form submission
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $user = $_POST['username'];
     $pass = $_POST['password'];
 
-    // Hardcoded credentials
     $validUsername = 'rifqifebrian';
     $validPassword = 'rijoe123';
 
